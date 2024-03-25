@@ -12,12 +12,20 @@ namespace ConsoleApp4
         public string lastName { get; set; }
         public double basicSalary { get; set; }
 
+        public Employee(string FirstnameEmp, string LastnameEmp, double SalaryEmp)
+        {
+            firstName = FirstnameEmp;
+            lastName = LastnameEmp;
+            basicSalary = SalaryEmp;
+        }
 
 
-        public void show()
+        public void details()
         {
 
             Console.WriteLine("name:" + firstName + lastName + "salary:" + basicSalary);
+
+
         }
               
     }

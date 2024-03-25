@@ -1,18 +1,16 @@
-﻿internal class Program
+﻿using ConsoleApp4;
+
+internal class Program
 {
     private static void Main(string[] args)
     {
-        int[] numbers = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
-        double total = 0;
-        double average= 0;
+       Employee employee1 = new Employee("Dimalka ","Sathsaranie  ",45000);
+        Employee employee2 = new Employee("Hmaya","Gimhani",50000);
+        Employee employee3 = new Employee("Tharindu","sadun",65000);
 
-        foreach (int i in numbers)
-        {
-            total += i;
-        }
-        average = total / numbers.Length;
-        Console.WriteLine("total =" + total +" , average="+average); 
-       
+        employee1.details();
+
+
 
     }
 }
